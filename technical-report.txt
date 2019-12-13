@@ -1,0 +1,210 @@
+[3] [2] [5]
+[7] [#] [8]    Difficulty: 12
+[4] [1] [6]
+Block[][] puzzle = {
+                {new Block(3,0,0),new Block(2,0,1), new Block(5,0,2)},
+                {new Block(7,1,0),new Block(0,1,1), new Block(8,1,2)},
+                {new Block(4,2,0),new Block(1,2,1), new Block(6,2,2)}};
+
+
+DFS results
+time:       2470 ms         2495 ms         3980 ms         avg: 2982 ms
+memory:     260.12 mb       253.30 mb       446.36 mb       avg: 319.92 mb
+cost&depth: 314460          309862          561292          avg: 395204
+expanded:   314460          309862          561292          avg: 395204
+
+IDS results
+time:       790 ms
+memory:     51.03 mb
+cost&depth: 12
+expanded:   403831
+
+BFS results
+time:       3338 ms
+memory:     403.14 mb
+cost&depth: 12
+expanded:   544814
+
+A* h1() results
+time:       3 ms
+memory:     6.71 mb
+cost&depth: 12
+expanded:   44
+
+A* h2() results
+time:       8 ms
+memory:     6.71 mb
+cost&depth: 12
+expanded:   114
+
+A* h3() results
+time:       70 ms
+memory:     21.47 mb
+cost&depth: 12
+expanded:   11447
+
+A* h4() results
+time:       37 ms
+memory:     9.39 mb
+cost&depth: 12
+expanded:   3062
+
+---------------------------------------------
+
+[1][2][5]
+[3][#][4]    Difficulty: 4
+[6][7][8]
+    
+
+Block[][] puzzle = {
+                {new Block(1,0,0),new Block(2,0,1), new Block(5,0,2)},
+                {new Block(3,1,0),new Block(0,1,1), new Block(4,1,2)},
+                {new Block(6,2,0),new Block(7,2,1), new Block(8,2,2)}};
+
+DFS results
+time:       2586 ms         420 ms          2412 ms         avg: 1806 ms
+memory:     305.49 mb       180.43 mb       197.36 mb       avg: 227.76 mb
+cost&depth: 345376          164044          221678          avg: 243699
+expanded:   345376          164044          221678          avg: 243699
+
+IDS results
+time:       11 ms
+memory:     6.71 mb
+cost&depth: 4
+expanded:   163
+
+BFS results
+time:       1 ms
+memory:     6.71 mb
+cost&depth: 4
+expanded:   85
+
+A* h1() results
+time:       1 ms
+memory:     5.36 mb
+cost&depth: 4
+expanded:   5
+
+A* h2() results
+time:       1 ms
+memory:     5.36 mb
+cost&depth: 4
+expanded:   4
+
+A* h3() results
+time:       20 ms
+memory:     5.36 mb
+cost&depth: 4
+expanded:   12
+
+A* h4() results
+time:       15 ms
+memory:     5.36 mb
+cost&depth: 4
+expanded:   12
+
+---------------------------------------------
+
+[1][2][5]
+[4][#][8]    Difficulty: 8
+[3][6][7]
+    
+
+Block[][] puzzle = {
+                {new Block(1,0,0),new Block(2,0,1), new Block(5,0,2)},
+                {new Block(4,1,0),new Block(0,1,1), new Block(8,1,2)},
+                {new Block(3,2,0),new Block(6,2,1), new Block(7,2,2)}};
+
+DFS results
+time:       10140 ms         30 ms           4460 ms        avg: 4876 ms
+memory:     1037.08 mb       8.05 mb         507.08 mb      avg: 517.40 mb
+cost&depth: 1431062          1216            663448         avg: 698575
+expanded:   1431062          1216            663448         avg: 698575
+
+IDS results
+time:       63 ms
+memory:     24.15 mb
+cost&depth: 8
+expanded:   12484
+
+BFS results
+time:       25 ms
+memory:     13.42 mb
+cost&depth: 8
+expanded:   4453
+
+A* h1() results
+time:       2 ms
+memory:     5.36 mb
+cost&depth: 8
+expanded:   17
+
+A* h2() results
+time:       1 ms
+memory:     5.36 mb
+cost&depth: 8
+expanded:   9
+
+A* h3() results
+time:       10 ms
+memory:     6.71 mb
+cost&depth: 8
+expanded:   267
+
+A* h4() results
+time:       5 ms
+memory:     6.71 mb
+cost&depth: 8
+expanded:   177
+
+---------------------------------------------
+
+[1] [3] [4]
+[7] [#] [2]    Difficulty: 14
+[8] [6] [5]
+Block[][] puzzle = {
+                {new Block(1,0,0),new Block(3,0,1), new Block(4,0,2)},
+                {new Block(7,1,0),new Block(0,1,1), new Block(2,1,2)},
+                {new Block(8,2,0),new Block(6,2,1), new Block(5,2,2)}};
+
+DFS results
+time:       4022 ms         5098 ms           4031 ms        avg: 4383 ms
+memory:     491.09 mb       676.51 mb         440.48 mb      avg: 536.02 mb
+cost&depth: 592102          960794            559322         avg: 704.072
+expanded:   592102          960794            559322         avg: 704.072
+
+IDS results
+time:       5740 ms
+memory:     26.99 mb
+cost&depth: 14
+expanded:   3570231
+
+BFS results
+time:       30640 ms
+memory:     2975.208 mb
+cost&depth: 14
+expanded:   4135727
+
+A* h1() results
+time:       17 ms
+memory:     6.71 mb
+cost&depth: 14
+expanded:   228
+
+A* h2() results
+time:       30 ms
+memory:     9.39 mb
+cost&depth: 14
+expanded:   2083
+
+A* h3() results
+time:       280 ms
+memory:     90.41 mb
+cost&depth: 14
+expanded:   89799
+
+A* h4() results
+time:       130 ms
+memory:     37.58 mb
+cost&depth: 14
+expanded:   23493
